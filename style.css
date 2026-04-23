@@ -1,0 +1,152 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+} 
+
+.container-hoz {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 equal horizontal columns */
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+@font-face {
+  font-family: 'Geostar';
+  src: url('assets/Geostar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Yarndings';
+  src: url('assets/Yarndings12-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Asset';
+  src: url('assets/Asset-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+.geostar {
+  font-family: 'Geostar';
+  font-size: 200%;
+}
+
+.yarndings {
+  font-family: 'Yarndings';
+  font-size: 200%;
+}
+
+.asset {
+  font-family: 'Asset';
+  font-size: 400%;
+}
+
+
+
+.round {
+  border: 1px solid black;
+  border-radius: 60%;
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.container img {
+  width: 50px;
+}  
+
+.tab-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  gap: 10px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tab-header li a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.tab-header li a:hover {
+  color: #6200ff;
+}
+
+.border { 
+  border-top: 1px solid rgb(0, 0, 0); 
+  text-align: center;
+
+}
+
+.center { 
+  text-align: center;
+  margin-top: -50px;
+}
+
+.center-page { 
+  text-align: center;
+  align-content: center;
+  margin-top: 8%;
+}
+
+.center-2 {
+  text-align: center;
+}
+
+.margin {
+  margin-left: 32%;
+  margin-right: 32%;
+  font-size: 20px;
+  margin-top: -45px;
+}
+
+.padding {
+  padding: 25px;
+}
+
+.padding-big {
+  padding: 75px;
+}
+
+/*From this post https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3 */
+
+.blink {
+  animation: blinker .5s infinite;
+}
+
+@keyframes blinker {
+  25% {
+    opacity: 0;
+  }
+}
+
+/*From this post https://stackoverflow.com/questions/16344354/how-to-make-blinking-flashing-text-with-css-3 */
+
+
+
+body {
+  background-color: rgb(255, 230, 0);
+}
+
+img {
+  border: 1px solid black;
+}
